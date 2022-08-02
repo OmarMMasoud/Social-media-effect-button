@@ -7,17 +7,18 @@ var balls = document.querySelectorAll("img");
 function hola(event){
 for (i=0; i<balls.length; i++){
 
-    // var Width = event.clientX  * 100 /event.screenX + "%";
-    // var hight = event.clientY * 100 / event.screenY + "%";
+    var Width = event.clientX  * 100 /window.innerWidth +  "%"  ;
+    var hight = event.clientY * 100 / window.innerHeight +  "%";
 
-    var Width = event.layerX - 60 
-    var hight = event.layerY - 60 
+   
     console.log("working?");
     console.log(Width + "px");
-    console.log(hight);
+    console.log(hight +"px");
     
-    balls[i].style.transform = tralate Width + "px";
-    balls[i].style.top = hight ;
+    balls[i].style.left =  Width ;
+    balls[i].style.top = hight;
+    balls[i].style.transform = "translate(-" + Width +" , - " + hight+ ")";
+
     
 }
 }
