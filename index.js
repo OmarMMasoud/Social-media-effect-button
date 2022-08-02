@@ -1,19 +1,12 @@
 var balls = document.querySelectorAll("img");
-// balls.style.postion = "absolute";
-// body.addEventListener('mousemove' , hola())
 
 
-
-function hola(event){
+function movement(event){
 for (i=0; i<balls.length; i++){
+    balls[i].style.transition = "all 0s ease"
 
     var Width = event.clientX  * 100 /window.innerWidth +  "%"  ;
     var hight = event.clientY * 100 / window.innerHeight +  "%";
-
-   
-    console.log("working?");
-    console.log(Width + "px");
-    console.log(hight +"px");
     
     balls[i].style.left =  Width ;
     balls[i].style.top = hight;
@@ -21,6 +14,22 @@ for (i=0; i<balls.length; i++){
 
     
 }
+}
+
+function leave(){
+
+    for (i=0; i<balls.length; i++){
+
+        balls[i].style.left = "28%" ;
+        balls[i].style.top = "28%" ;
+        balls[i].style.transition = "all 1s ease"
+        
+
+
+    }
+         
+        
+
 }
 
 
