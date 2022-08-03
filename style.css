@@ -41,10 +41,4 @@ body {
   width: 3rem;
   position: absolute;
   transition: all 0s ease;
-}
-
-.addCSS {
-  display: none;
-  background-color: green !important;
-  padding: 0 3rem;
 }/*# sourceMappingURL=style.css.map */
