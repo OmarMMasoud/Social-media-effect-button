@@ -24,8 +24,6 @@ function leave(){
         balls[i].style.top = "28%" ;
         balls[i].style.transition = "all 1s ease"
         
-
-
     }
          
         
