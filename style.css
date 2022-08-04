@@ -1,5 +1,5 @@
 body {
-  background-color: #f0f0f0;
+  background-color: #940027;
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
@@ -10,6 +10,7 @@ body {
 }
 
 .social {
+  padding: 5rem;
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -18,7 +19,12 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  height: 1000px;
+  height: 400px;
+}
+
+.logo {
+  margin-top: 5rem;
+  transform: translateX(300px);
 }
 
 .circle {
@@ -26,10 +32,9 @@ body {
   width: 100px;
   height: 100px;
   display: flex;
-  background-color: #000000;
+  background-color: #ffffff;
   margin: 0 20px;
   border-radius: 500px;
-  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2);
   align-items: center;
   text-align: center;
   justify-content: center;
